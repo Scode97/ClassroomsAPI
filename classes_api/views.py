@@ -11,7 +11,7 @@ class ListView(ListAPIView):
     serializer_class = ListSerializer
 
 
-class DetailView(ListAPIView):
+class DetailView(RetrieveAPIView):
     queryset = Classroom.objects.all()
     serializer_class = DetailSerializer
     lookup_field = 'id'

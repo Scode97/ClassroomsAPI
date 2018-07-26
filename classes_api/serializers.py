@@ -7,10 +7,12 @@ class ListSerializer(serializers.ModelSerializer):
         fields = ['subject', 'year', 'teacher',]
 
 
+
 class DetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = Classroom
         fields = '__all__'
+
 
 class CreateUpdateSerializer(serializers.ModelSerializer):
     class Meta:
